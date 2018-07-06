@@ -23,6 +23,8 @@ html, body {
     height: 230px;
     /* background-color: lightskyblue; */
     background: linear-gradient(to right bottom, #32CCFE, #4C8AFB);
+    /*  */
+    min-width: calc(510px - 10%);
 }
 
 .header-heading {
@@ -104,6 +106,8 @@ html, body {
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 8px 8px 30px -4px #0000001a;
+    /*  */
+    min-width: 510px;
 }
 
 .day-picker {
@@ -502,6 +506,7 @@ canvas {
     .day-picker {
         width: 100%;
         height: 70px;
+        min-width: 510px;
     }
     .day-picker ul li a {
         /* width: 14.28%; */
@@ -552,5 +557,6 @@ canvas {
     .under-body {
         width: 80%;
         padding: 2% 10%;
+        min-width: calc(510px - 20%);
     }
 }
