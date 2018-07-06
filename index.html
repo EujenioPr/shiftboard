@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shiftboard</title>
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/common.css">
+    <link rel="stylesheet" href="assets/styles/jquery-clockpicker.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-heading">
+                <h2>Shiftboard</h2>
+                <span>Surgeon</span>
+            </div>
+            <div class="header-user-wrapper">
+                <!-- <div class="header-user"> -->
+                    <strong>Jay Query</strong>
+                    <span>+380-67-34-144-12</span>
+                    <img src="assets/images/musk.jpg" alt="">
+                <!-- </div> -->
+            </div>
+        </header>
+        <div class="main-body">
+            <section class="day-picker">
+                <ul>
+                    <li><a class="day-pick" id="dmonday" href="#monday"><strong>Monday</strong><span>06/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dtuesday" href="#tuesday"><strong>Tuesday</strong><span>07/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dwednesday" href="#wednesday"><strong>Wednesday</strong><span>08/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dthursday" href="#thursday"><strong>Thursday</strong><span>09/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dfriday" href="#friday"><strong>Friday</strong><span>10/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dsaturday" href="#saturday"><strong>Saturday</strong><span>11/04/2018</span></a></li>
+                    <li><a class="day-pick" id="dsunday" href="#sunday"><strong>Sunday</strong><span>12/04/2018</span></a></li>
+                </ul>
+            </section>
+            <section class="day-manager">
+                <div class="time-presenter">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="time-general">
+                    <h2>16<strong>H</strong></h2>
+                    <h3>22<strong>M</strong></h3>
+                    <h4>GENERAL SHIFT TIME</h4>
+                </div>
+                <div class="time-enterer">
+                        <div class="time-enterer-cell">
+                            <input type="text" class="clockpicker" id="timePickerL1" placeholder="-"><input type="text" class="clockpicker" id="timePickerR1" placeholder="-">
+                            <button id="clearTime1" class="time-clean-btn"></button>
+                            <strong class="time-cell-name">S1</strong>
+                        </div>
+                        <div class="time-enterer-cell">
+                            <input type="text" class="clockpicker" id="timePickerL2" placeholder="-"><input type="text" class="clockpicker" id="timePickerR2" placeholder="-">
+                            <button id="clearTime2" class="time-clean-btn"></button>
+                            <strong class="time-cell-name">S2</strong>
+                        </div>
+                        <div class="time-enterer-cell">
+                            <input type="text" class="clockpicker" id="timePickerL3" placeholder="-"><input type="text" class="clockpicker" id="timePickerR3" placeholder="-">
+                            <button id="clearTime3" class="time-clean-btn"></button>
+                            <strong class="time-cell-name">S3</strong>
+                        </div>
+                        <div class="time-enterer-cell">
+                            <input type="text" class="clockpicker" id="timePickerL4" placeholder="-"><input type="text" class="clockpicker" id="timePickerR4" placeholder="-">
+                            <button id="clearTime4" class="time-clean-btn"></button>
+                            <strong class="time-cell-name">NS</strong>
+                        </div>
+                </div>
+            </section>
+        </div>
+        <div class="under-body">
+            <div class="under-body-stats">
+                <h2>Last Month</h2>
+                <strong>235</strong><span>Hours Spent</span>
+                <strong>39</strong><span>Shifts Used</span>
+                <strong>7</strong><span>Night Shifts</span>
+            </div>
+            <div class="under-body-info">
+                <h2>Info</h2>
+                <strong>S1, S2, S3</strong><span>Daily Shifts</span>
+                <strong>NS</strong><span>Night Shift</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="assets/scripts/jquery-clockpicker.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
